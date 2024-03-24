@@ -4,9 +4,16 @@
 }
 
 body {
+    height: 100vh;
+    box-sizing: border-box;/*Esta comando não permite que a imagem saia do espaço pai*/
     background-color:black;
     color: #f6f6f6;
 }
-.titulo-destaque {
+.titulo-destaque { /*se declara uma class com um pont0 (.) na página do CSS */
     color: #22d4fd;
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
 }
