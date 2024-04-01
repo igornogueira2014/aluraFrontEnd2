@@ -7,7 +7,7 @@
 }
 
 body {
-    height: 100vh;
+    /* height: 100vh; com este comando é possível visualiza todo o conteúdo do body na página*/
     box-sizing: border-box;/*Esta comando não permite que a imagem saia do espaço pai*/
     background-color:black;
     color: #f6f6f6;
@@ -17,7 +17,7 @@ body {
 }
 
 .apresentacao {
-    margin: 10% 15%;
+    padding: 8% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -72,4 +72,14 @@ body {
 
 .apresentacao__links__link:hover {
     background-color: #272727;
+}
+
+.rodape {
+    padding: 24px;
+    color: #000000;
+    background-color: #22d4fd;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
 }
