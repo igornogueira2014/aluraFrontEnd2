@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Aqui o :root  é uma variável global do css para ser declarada onde quiser no projeto*/
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22d4fd;
+    --cor-hover: #272727;
+}
+
+
+
 * { /* Este comando faz o Resert CSS, para a página não faça por padrão suas regras*/
     margin: 0;
     padding: 0;
@@ -9,8 +19,8 @@
 body {
     /* height: 100vh; com este comando é possível visualiza todo o conteúdo do body na página*/
     box-sizing: border-box;/*Esta comando não permite que a imagem saia do espaço pai*/
-    background-color:black;
-    color: #f6f6f6;
+    background-color:var(--cor-primaria);
+    color: var(--cor-secundaria);
 }
 
 .cabecalho {
@@ -18,7 +28,7 @@ body {
 }
 
 .cabecalho__menu {
-    display: flex;
+    display: flex; 
     gap: 80px;
 
 }
@@ -27,7 +37,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 600;
-    color: #22d4fd;
+    color: var(--cor-terciaria);
     text-decoration: none;
 }
 
@@ -51,7 +61,7 @@ body {
 }
 
 .titulo-destaque { /*se declara uma class com um pont0 (.) na página do CSS */
-    color: #22d4fd;
+    color: var(--cor-terciaria);
 }
 
 .apresentacao__conteudo__texto {
@@ -77,7 +87,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
-    border: 2px solid #22d4fd;
+    border: 2px solid var(--cor-terciaria);
     width: 378px;
     text-align: center;
     border-radius: 8px;
@@ -85,18 +95,18 @@ body {
     font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none;
-    color: #f6f6f6 ;
+    color: var(--cor-secundaria);
     font-family:"Montserrat", sans-serif;
 }
 
 .apresentacao__links__link:hover {
-    background-color: #272727;
+    background-color: var(--cor-hover);
 }
 
 .rodape {
     padding: 24px;
-    color: #000000;
-    background-color: #22d4fd;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
