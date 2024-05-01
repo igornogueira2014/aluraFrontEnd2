@@ -46,6 +46,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .apresentacao__conteudo {/* Identificamos apartir daqui todas as classes usando o nome do pai e apos a referencia do filho*/
@@ -115,4 +116,19 @@ body {
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+@media (max-width: 1200px) {  /* A partir desse comando, consigo deixar meu site responsivo, usando @media, onde espesifico (condição ente aspas com max-width), quando ele entrará em ação */
+   
+    .cabecalho {
+        padding: 10%;
+    }
+   
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+    }
 }
