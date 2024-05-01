@@ -23,7 +23,6 @@ body {
     background-color:var(--cor-primaria);
     color: var(--cor-secundaria);
 }
-
 .cabecalho {
     padding: 2% 0% 0% 15%;
 }
@@ -130,5 +129,13 @@ body {
 
     .apresentacao {
         flex-direction: column-reverse;
+        padding: 5%;
     }
-}
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+
+}   
+
